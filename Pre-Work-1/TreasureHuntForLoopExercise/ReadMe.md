@@ -1,4 +1,4 @@
-Exercise: "Treasure Hunt in a Treasure Map"
+### Exercise: "Treasure Hunt in a Treasure Map"
 
 Imagine you have a grid (a 2D array) representing a treasure map. Each cell in the grid contains a number. One of the numbers is the "treasure" (for example, 42). Your tasks are:
 
