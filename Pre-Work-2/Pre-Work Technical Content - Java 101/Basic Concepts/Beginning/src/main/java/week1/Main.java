@@ -1,13 +1,21 @@
 package week1;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.out.println("Hello \rvelihan1!\n");
 
         System.out.println("H\'ello\b velihan\"2!");
 
         System.out.println("\tHello v\\elihan3!\f");
+
+        System.out.print("Loading 10%\r");
+        Thread.sleep(1000);
+        System.out.print("Loading 20%\r");
+        Thread.sleep(1000);
+        System.out.print("Loading 30%\r");
+        Thread.sleep(1000);
+        System.out.print("Loading 40%\n");
 
         int i = 35;
 
