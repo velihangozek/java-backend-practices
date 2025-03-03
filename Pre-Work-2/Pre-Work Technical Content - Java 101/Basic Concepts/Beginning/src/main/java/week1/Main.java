@@ -127,6 +127,9 @@ public class Main {
         boolean isFalse = false || true;
         boolean isFalse1 = ( false || true ) && ( false && false ) || ( true && true && false) ;
 
+        int a = 5;
+        int d = (a == 1) ? 1 : 0;
+        System.out.println("\n" + d);
 
     }
 }
