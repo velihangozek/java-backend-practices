@@ -78,7 +78,7 @@ public class Main {
         System.out.println("Same object references? " + (string3 == string4)); // Same object from string pool
         System.out.println("Same content? " + string3.equals(string4));
 
-        
+
 
     }
 }
