@@ -28,10 +28,12 @@ BodyMassIndexCalculator is a simple Java application that calculates the Body Ma
 When you run the application, you will be prompted to enter your height (in centimeters) and weight (in kilograms):
 
 Please enter your height (in CM) and weight (in KG) to calculate your BMI:
+
 Height (CM): 172
 Weight (KG): 105
 
 Your calculated BMI (Body Mass Index) is: 35.492
+
 The application validates your input and displays your BMI rounded to three decimal places.
 
 ## Contributing
