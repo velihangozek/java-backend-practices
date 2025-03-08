@@ -5,6 +5,7 @@ BodyMassIndexCalculator is a simple Java application that calculates the Body Ma
 ## Table of Contents
 
 - [Features](#features)
+- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Example Output](#example-output)
 - [Contributing](#contributing)
@@ -17,6 +18,12 @@ BodyMassIndexCalculator is a simple Java application that calculates the Body Ma
 - **Input Validation:** Ensures that the provided values are valid numbers and positive.
 - **Clear Output:** Displays the BMI rounded to three decimal places.
 - **Robust Exception Handling:** Manages unexpected inputs and errors gracefully.
+
+## Project Structure
+
+.../org/velihangozek 
+                    ├── Main.java 
+                    └── BodyMassIndex.java
 
 ## Prerequisites
 

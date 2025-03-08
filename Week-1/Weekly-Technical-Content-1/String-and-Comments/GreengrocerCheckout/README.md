@@ -25,10 +25,11 @@ This project simulates a checkout system at a greengrocer. The user is prompted 
 
 ## Project Structure
 
-/org/velihangozek ├── Main.java ├── GreengrocerCheckout.java └── Fruit.java
+.../org/velihangozek 
+                    ├── Main.java 
+                    ├── GreengrocerCheckout.java 
+                    └── Fruit.java
 
-markdown
-Copy
 - **Main.java:** Contains the `main` method, which is the entry point of the application.
 - **GreengrocerCheckout.java:** Manages a collection of `Fruit` objects, handles user input, and calculates the total price.
 - **Fruit.java:** Represents a fruit with its name, price per kilogram, and purchased amount. It also provides functionality for calculating the total price for that fruit.
@@ -42,19 +43,17 @@ Copy
 
 When you run the application, you will be prompted to enter the weight (in kilograms) for each fruit:
 
-yaml
-Copy
-Pear in KG: 1.5
-Apple in KG: 2.0
-Tomato in KG: 0.8
-Banana in KG: 1.2
-Eggplant in KG: 0.5
+`Pear in KG` : `1.5`
+`Apple in KG` : `2.0`
+`Tomato in KG` : `0.8`
+`Banana in KG` : `1.2`
+`Eggplant in KG` : `0.5`
 
 If you enter an invalid value (e.g., text), the application will display an error message and prompt you again for that fruit until a valid number is provided. After all valid inputs are received, the application calculates and displays the total price in TL (Turkish Lira).
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Contact
 
