@@ -45,9 +45,13 @@ This project simulates a checkout system at a greengrocer. The user is prompted 
 When you run the application, you will be prompted to enter the weight (in kilograms) for each fruit:
 
 `Pear in KG` : `1.5`
+
 `Apple in KG` : `2.0`
+
 `Tomato in KG` : `0.8`
+
 `Banana in KG` : `1.2`
+
 `Eggplant in KG` : `0.5`
 
 If you enter an invalid value (e.g., text), the application will display an error message and prompt you again for that fruit until a valid number is provided. After all valid inputs are received, the application calculates and displays the total price in TL (Turkish Lira).
