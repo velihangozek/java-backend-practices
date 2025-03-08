@@ -20,7 +20,7 @@ BodyMassIndexCalculator is a simple Java application that calculates the Body Ma
 
 ## Prerequisites
 
-- **Java Development Kit (JDK):** Make sure you have JDK 8 or higher installed.
+- **Java Development Kit (JDK):** Make sure you have JDK 21 or higher installed.
 - **IDE (Optional):** You can use any Java IDE such as IntelliJ IDEA, Eclipse, or Visual Studio Code.
 
 ## Example Output
