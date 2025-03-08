@@ -57,4 +57,4 @@ For questions, suggestions, or feedback, feel free to reach out:
 
 Email: velihangozek@hotmail.com
 
-GitHub: github.com/velihangozek
+GitHub: [github.com/velihangozek](https://github.com/velihangozek)
