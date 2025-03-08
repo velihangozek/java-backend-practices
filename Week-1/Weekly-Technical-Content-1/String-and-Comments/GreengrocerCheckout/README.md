@@ -25,7 +25,8 @@ This project simulates a checkout system at a greengrocer. The user is prompted 
 
 ## Project Structure
 
-.../org/velihangozek 
+.../org/velihangozek
+
                     ├── Main.java 
                     ├── GreengrocerCheckout.java 
                     └── Fruit.java
