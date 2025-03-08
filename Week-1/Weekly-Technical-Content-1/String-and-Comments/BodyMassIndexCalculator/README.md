@@ -56,4 +56,5 @@ This project is licensed under the MIT License.
 For questions, suggestions, or feedback, feel free to reach out:
 
 Email: velihangozek@hotmail.com
-GitHub: velihangozek
+
+GitHub: github.com/velihangozek
