@@ -21,8 +21,10 @@ BodyMassIndexCalculator is a simple Java application that calculates the Body Ma
 
 ## Project Structure
 
-.../org/velihangozek 
+.../org/velihangozek
+
                     ├── Main.java 
+                    
                     └── BodyMassIndex.java
 
 ## Prerequisites
