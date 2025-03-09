@@ -8,7 +8,6 @@ FlightTicketHandler is a Java-based application that calculates flight ticket pr
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Future Improvements](#future-improvements)
 - [License](#license)
 - [Note](#note)
 
