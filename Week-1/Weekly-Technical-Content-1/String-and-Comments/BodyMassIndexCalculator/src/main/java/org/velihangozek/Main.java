@@ -38,7 +38,7 @@ public class Main {
             System.out.println(prompt);
             while (!scanner.hasNextDouble()) {
                 System.out.println("That's not a valid number. Please try again.");
-                scanner.nextLine();
+                scanner.nextLine(); // Clear the invalid input.
                 System.out.println(prompt);
             }
             value = scanner.nextDouble();
