@@ -30,27 +30,32 @@ FlightTicketHandler is a Java-based application that calculates flight ticket pr
 Run the compiled Java program from the terminal:
 
 java FlightTicketHandler
+
 The application will prompt you for the following inputs:
 
 Distance in Kilometers:
+
 Example: 1500
 
 Passenger's Age:
+
 Example: 20
 
 Journey Type (1 for One Way, 2 for Round Trip):
+
 Example: 2
 
 Output: Total Price = 216.0 TL
 
 After providing valid inputs, the program will display the calculated total ticket price. If any input is invalid, it will show the error message:
+
 "Invalid input provided!"
 
 ## Project Structure
 
-FlightTicketHandler.java
-TicketCalculator.java
-README.md
+> FlightTicketHandler.java
+> TicketCalculator.java
+> README.md
 
 ## License
 
