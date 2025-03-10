@@ -52,7 +52,7 @@ FlightTicketHandler is a Java-based application that calculates flight ticket pr
 
 4. After providing valid inputs, the program will display the calculated total ticket price. If any input is invalid, it will show the error message:
 
-    "Invalid input provided!"
+    `"Invalid input provided!"`
 
 ## Project Structure
 
