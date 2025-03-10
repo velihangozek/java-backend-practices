@@ -48,7 +48,7 @@ FlightTicketHandler is a Java-based application that calculates flight ticket pr
 
 3. Output:
 
-      Total Price = 216.0 TL
+      `Total Price = 216.0 TL`
 
 4. After providing valid inputs, the program will display the calculated total ticket price. If any input is invalid, it will show the error message:
 
