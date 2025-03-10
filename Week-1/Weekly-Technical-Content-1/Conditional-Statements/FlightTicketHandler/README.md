@@ -30,7 +30,7 @@ FlightTicketHandler is a Java-based application that calculates flight ticket pr
 1. Run the compiled Java program from the terminal:
 
 
-    java FlightTicketHandler
+    - java FlightTicketHandler
 
 2. The application will prompt you for the following inputs:
 
