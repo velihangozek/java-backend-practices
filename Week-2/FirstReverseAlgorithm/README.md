@@ -28,12 +28,12 @@ The **FirstReverse** project is designed to take a string as input and return th
 
 `Input Example:`
 
-    ```bash
-    Hello World and Coders
-    ```
+```bash
+Hello World and Coders
+```
 
 `Output:`
 
-    ```bash
-    sredoC dna dlroW olleH
-    ```
+```bash
+sredoC dna dlroW olleH
+```
