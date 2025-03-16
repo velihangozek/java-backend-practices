@@ -27,11 +27,11 @@ This repository includes three distinct solution approaches:
 ```
 LetterCount/
 ├── README.md 
-├── Solution1/ 
-  │ └── Main.java 
-├── Solution2/
+├── FirstApproach/ 
     └── Main.java 
-└── Solution3/
+├── SecondApproach/
+    └── Main.java 
+└── ThirdApproach/
     └── Main.java
 ```
 
