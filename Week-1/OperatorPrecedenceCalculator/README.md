@@ -31,9 +31,13 @@ The application is ideal for learning about user input, exception handling, and 
 ## Features
 
 - **Arithmetic Operation:** Calculates the result of the expression `a + b * c - b`.
+
 - **User Input Validation:** Uses a loop with exception handling to ensure only valid numerical inputs are accepted.
+
 - **Formatted Output:** Displays the arithmetic expression and its result using formatted strings.
+
 - **Clean Code Structure:** Separated logic into two classes:
+
   - `Main` for handling input and output.
   - `OperatorPrecedenceCalculator` for computing the arithmetic operation.
 
