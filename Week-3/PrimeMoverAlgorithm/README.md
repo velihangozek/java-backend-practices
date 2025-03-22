@@ -1,6 +1,6 @@
 # 🏗️ Prime Mover
 
-> Return the *n*th prime number (1 ≤ n ≤ 10,000) using an efficient Sieve of Eratosthenes implementation in Java.
+> Return the *n* th prime number (1 ≤ n ≤ 10,000) using an efficient Sieve of Eratosthenes implementation in Java.
 
 ---
 
