@@ -7,9 +7,9 @@ A simple Java console application that prints a reversed triangle of stars (`*`)
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Prerequisites](#⚙️-prerequisites)
+- [Prerequisites](#prerequisites)
 - [Usage](#-usage)
-- [Example Output](#🖥️-example-output)
+- [Example Output](#example-output)
 - [Project Structure](#-project-structure)
 
 ---
@@ -22,6 +22,7 @@ A simple Java console application that prints a reversed triangle of stars (`*`)
 
 ---
 
+<a id="prerequisites"></a>
 ## ⚙️ Prerequisites
 
 - Java Development Kit (JDK) 21 or higher
@@ -43,6 +44,7 @@ A simple Java console application that prints a reversed triangle of stars (`*`)
 
 ---
 
+<a id="example-output"></a>
 ## 🖥️ Example Output
 
 ```text
