@@ -12,24 +12,10 @@ A simple Java console application that determines whether a given positive integ
 ## 📁 Project Structure
 
 ```
-PerfectNumberCheckerApp/ 
-├── src/ 
-    │ 
-    └── main/ 
-        │ 
-        └── java/ 
-            │ 
-            └── org/ 
-                  │ 
-                  └── velihangozek/ 
-                      │ 
-                      └── perfectnumberchecker/ 
-                          │ 
-                          ├── PerfectNumberCheckerBasic.java 
-                          │ 
-                          ├── PerfectNumberCheckerOptimized.java 
-                          │ 
-                          └── PerfectNumberUtils.java 
+PerfectNumberChecker/ 
+├── src/main/java/org/velihangozek/ 
+│                     ├── PerfectNumberCheckerBasic.java 
+│                     ├── PerfectNumberCheckerOptimized.java 
 └── README.md
 ```
 
@@ -48,17 +34,20 @@ PerfectNumberCheckerApp/
 
 - The program outputs whether the number is or is not perfect.
 
-    Example
+    >Example
 
     ```bash
-    Bir sayı giriniz: 28
-    28 Mükemmel sayıdır.
+    "Please enter a positive integer to determine if it is a perfect number: "
+    28
+    28 is Perfect!
 
-    Bir sayı giriniz: 496
-    496 Mükemmel sayıdır.
+    "Please enter a positive integer to determine if it is a perfect number: "
+    496
+    496 is Perfect!
 
-    Bir sayı giriniz: 1
-    1 Mükemmel sayı değildir.
+    "Please enter a positive integer to determine if it is a perfect number: "
+    1
+    1 is NOT Perfect!
     ```
 
 ## 📚 Perfect Number Definition
