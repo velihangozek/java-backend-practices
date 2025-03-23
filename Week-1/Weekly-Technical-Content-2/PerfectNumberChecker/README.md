@@ -11,62 +11,58 @@ A simple Java console application that determines whether a given positive integ
 
 ## 📁 Project Structure
 
-PerfectNumberCheckerApp/ ├── src/ │ └── main/ │ └── java/ │ └── org/ │ └── velihangozek/ │ └── perfectnumberchecker/ │ ├── PerfectNumberCheckerBasic.java │ ├── PerfectNumberCheckerOptimized.java │ └── PerfectNumberUtils.java └── README.md
-
-yaml
-Copy
+```
+PerfectNumberCheckerApp/ 
+├── src/ 
+    │ 
+    └── main/ 
+        │ 
+        └── java/ 
+            │ 
+            └── org/ 
+                  │ 
+                  └── velihangozek/ 
+                      │ 
+                      └── perfectnumberchecker/ 
+                          │ 
+                          ├── PerfectNumberCheckerBasic.java 
+                          │ 
+                          ├── PerfectNumberCheckerOptimized.java 
+                          │ 
+                          └── PerfectNumberUtils.java 
+└── README.md
+```
 
 ---
 
 ## ⚙️ Prerequisites
 
-- Java JDK 11 or newer  
-- VSCode (with Java Extension Pack)  
+- Java JDK 21 or newer  
+- IntelliJ or similar IDE
 
 ---
 
-## 🚀 How to Compile & Run
+## 🎯 Usage
 
-Open a terminal at the project root and execute:
+- When prompted, enter a positive integer.
 
-```bash
-# Compile all classes
-javac -d out src/main/java/org/velihangozek/perfectnumberchecker/*.java
+- The program outputs whether the number is or is not perfect.
 
-# Run Basic implementation
-java -cp out org.velihangozek.perfectnumberchecker.PerfectNumberCheckerBasic
+    Example
 
-# Run Optimized implementation
-java -cp out org.velihangozek.perfectnumberchecker.PerfectNumberCheckerOptimized
-🎯 Usage
-When prompted, enter a positive integer.
+    ```bash
+    Bir sayı giriniz: 28
+    28 Mükemmel sayıdır.
 
-The program outputs whether the number is or is not perfect.
+    Bir sayı giriniz: 496
+    496 Mükemmel sayıdır.
 
-Example
-text
-Copy
-Bir sayı giriniz: 28
-28 Mükemmel sayıdır.
+    Bir sayı giriniz: 1
+    1 Mükemmel sayı değildir.
+    ```
 
-Bir sayı giriniz: 496
-496 Mükemmel sayıdır.
+## 📚 Perfect Number Definition
 
-Bir sayı giriniz: 1
-1 Mükemmel sayı değildir.
-📚 Perfect Number Definition
-A perfect number equals the sum of its positive divisors (excluding itself).
+    A perfect number equals the sum of its positive divisors (excluding itself).
 
-6, 28, 496, 8128, … are the first few perfect numbers.
-
-🔧 Contributing
-Feel free to open issues or pull requests for:
-
-Additional optimizations
-
-New features (e.g., GUI, web API)
-
-Unit tests
-
-📄 License
-MIT © 2025 Velihangozek
+    6, 28, 496, 8128, … are the first few perfect numbers.
