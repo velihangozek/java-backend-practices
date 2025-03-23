@@ -7,9 +7,9 @@ A simple Java console application that prints a reversed triangle of stars (`*`)
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Prerequisites](#⚙️-Prerequisites)
+- [Prerequisites](#⚙️-prerequisites)
 - [Usage](#-usage)
-- [Example Output](#🖥️-Example-Output)
+- [Example Output](#🖥️-example-output)
 - [Project Structure](#-project-structure)
 
 ---
