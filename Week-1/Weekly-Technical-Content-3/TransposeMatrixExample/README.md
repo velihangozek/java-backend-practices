@@ -43,7 +43,7 @@ javac -d out src/main/java/org/velihangozek/*.java
 
 3️⃣ Run:
 ```bash
-java -cp out src/main/java/org/velihangozek.Main
+java -cp out org.velihangozek.Main
 ```
 
 4️⃣ Follow prompts to enter matrix dimensions and elements.
