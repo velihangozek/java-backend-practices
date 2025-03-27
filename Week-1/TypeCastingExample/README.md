@@ -10,7 +10,8 @@
 2. [Features & Improvements](#features--improvements)  
 3. [Requirements](#requirements)  
 4. [Getting Started](#getting-started)  
-5. [Usage Example](#usage-example)  
+5. [How to Run](#how-to-run)
+6. [Usage Example](#usage-example)
 
 ---
 <a id="project-description"></a>
@@ -46,7 +47,7 @@ This small Java application asks the user for an integer and a decimal number, t
 2. Open the project folder in IntelliJ  
 
 ---
-<a id="usage-example"></a>
+<a id="how-to-run"></a>
 ## ▶️ How to Run
 
 1. Open the terminal
@@ -60,9 +61,13 @@ This small Java application asks the user for an integer and a decimal number, t
 
 ```bash
 java -cp bin org.velihangozek.Main
-🖥 Usage Example
-text
-Copy
+```
+
+---
+<a id="usage-example"></a>
+## 🖥 Usage Example
+
+```bash
 Please enter an integer : 
 fsa
 Invalid input - Please enter a valid integer! =>
