@@ -6,7 +6,7 @@
 
 ## 📝 Table of Contents
 
-1. [Project Description](#project-description)  
+1. [Project Description](#🚀-Project-Description)  
 2. [Features & Improvements](#features--improvements)  
 3. [Requirements](#requirements)  
 4. [Getting Started](#getting-started)  
