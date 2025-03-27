@@ -6,22 +6,20 @@
 
 ## 📝 Table of Contents
 
-1. [Project Description](#-🚀-Project-Description)  
+1. [Project Description](#project-description)  
 2. [Features & Improvements](#features--improvements)  
 3. [Requirements](#requirements)  
 4. [Getting Started](#getting-started)  
 5. [Usage Example](#usage-example)  
-6. [Code Structure](#code-structure)  
-7. [License](#license)
 
 ---
-
+<a id="project-description"></a>
 ## 🚀 Project Description
 
 This small Java application asks the user for an integer and a decimal number, then converts (casts) the integer → double and the double → integer, displaying each result. It includes continuous input validation to ensure only relevant valid numeric input is accepted.
 
 ---
-
+<a id="features--improvements"></a>
 ## ✨ Features & Improvements
 
 | Feature | Description | Improvement Benefit |
@@ -33,7 +31,7 @@ This small Java application asks the user for an integer and a decimal number, t
 | **Formatted Output** | Displays casting results clearly | Easier to read conversion results |
 
 ---
-
+<a id="requirements"></a>
 ## 🛠 Requirements
 
 - Java 21+  
@@ -41,14 +39,14 @@ This small Java application asks the user for an integer and a decimal number, t
 - JDK installed and added to your `PATH`
 
 ---
-
+<a id="getting-started"></a>
 ## 📦 Getting Started
 
 1. Clone or download this repository  
 2. Open the project folder in IntelliJ  
 
 ---
-
+<a id="usage-example"></a>
 ## ▶️ How to Run
 
 1. Open the terminal
