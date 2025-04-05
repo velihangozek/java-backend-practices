@@ -9,12 +9,11 @@ A simple implementation of the **Run-Length Encoding (RLE)** algorithm in Java t
 
 ## Table of Contents
 - [Description](#description)
-- [Installation](#installation)
+- [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Code Explanation](#code-explanation)
 - [Examples](#examples)
 - [Best Practices](#best-practices)
-- [License](#license)
 
 ---
 
@@ -28,14 +27,12 @@ The **Run-Length Encoding (RLE)** algorithm compresses a string by replacing seq
 
 ---
 
-## Installation
-
 ### Prerequisites
 
 - **Java Development Kit (JDK) 21 or later**
 - **IntelliJ or similar IDE**
 
-### Steps
+### Usage
 
 1. **Clone or Download the Repository:**  
    Download the project files to your local machine.
