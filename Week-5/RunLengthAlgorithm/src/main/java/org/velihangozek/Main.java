@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*;
 
 class Main {
-    public static String RunLength(String str) {
+    public static String runLength(String str) {
 
         // If the string is null or empty, return an empty string
         if (str == null || str.isEmpty()) {
@@ -44,6 +44,6 @@ class Main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print(RunLength(s.nextLine()));
+        System.out.print(runLength(s.nextLine()));
     }
 }
