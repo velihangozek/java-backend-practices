@@ -6,7 +6,7 @@ import java.io.*;
 public class Main {
 
         // Returns the nth prime number
-        public static int PrimeMover(int num) {
+        public static int primeMover(int num) {
             // We know the 10,000th prime is 104,729, so 200,000 is a safe upper bound
             int limit = 200_000;
             boolean[] isNotPrime = new boolean[limit + 1];
@@ -45,7 +45,7 @@ public class Main {
             int input = Integer.parseInt(s.nextLine());
 
             // Print the nth prime number
-            System.out.println(PrimeMover(input));
+            System.out.println(primeMover(input));
         }
 
 }
