@@ -6,7 +6,7 @@
 
 ## 📖 Problem Statement
 
-Write a function `PrimeMover(int num)` that returns the `num`th prime number.  
+Write a function `primeMover(int num)` that returns the `num`th prime number.  
 
 - **Input Range:** 1 ≤ num ≤ 10⁴  
 - **Example:**  
