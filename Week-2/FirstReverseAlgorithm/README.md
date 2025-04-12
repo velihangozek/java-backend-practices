@@ -1,10 +1,10 @@
-# FirstReverse
+# firstReverse
 
 A simple yet efficient Java algorithm solution that reverses a given string. This project demonstrates the "First Reverse" problem using Java's `StringBuilder` for an elegant one-line solution.
 
 ## Overview
 
-The **FirstReverse** project is designed to take a string as input and return the reversed version of that string. This approach leverages Java's built-in methods to ensure both clarity and performance, making it ideal for beginners and experienced developers alike.
+The **firstReverse** project is designed to take a string as input and return the reversed version of that string. This approach leverages Java's built-in methods to ensure both clarity and performance, making it ideal for beginners and experienced developers alike.
 
 ## Features
 
@@ -20,7 +20,7 @@ The **FirstReverse** project is designed to take a string as input and return th
 
 ### Code Explanation & Usage
 
-- Contains the **FirstReverse** method which reverses the input string using **StringBuilder**.
+- Contains the **firstReverse** method which reverses the input string using **StringBuilder**.
 
 - The main method reads the user input and prints the reversed string.
 
