@@ -1,10 +1,10 @@
-# LetterCount
+# letterCount
 
 A Java project that contains multiple solution approaches to the "Letter Count" problem. This project identifies the first word in a sentence with the greatest number of repeated letters.
 
 ## Overview
 
-The **Letter Count** problem requires you to write a function `LetterCount(str)` that takes a string as input and returns the first word that has the greatest number of repeated letters. If no word contains repeated letters, the function should return **-1**.
+The **Letter Count** problem requires you to write a function `letterCount(str)` that takes a string as input and returns the first word that has the greatest number of repeated letters. If no word contains repeated letters, the function should return **-1**.
 
 ### Example Inputs & Outputs
 
