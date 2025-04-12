@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-    public static String LetterCount(String str) {
+    public static String letterCount(String str) {
         String[] words = str.split(" ");
         String result = "-1";
         int maxRepeats = 0;
@@ -39,6 +39,6 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println(LetterCount(s.nextLine()));
+        System.out.println(letterCount(s.nextLine()));
     }
 }

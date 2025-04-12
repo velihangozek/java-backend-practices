@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-    public static String LetterCount(String str) {
+    public static String letterCount(String str) {
 
         // Split the string by spaces.
         String[] words = str.split(" ");
@@ -43,6 +43,6 @@ public class Main {
     public static void main(String[] args) {
         // keep this function call here.
         Scanner s = new Scanner(System.in);
-        System.out.print(LetterCount(s.nextLine()));
+        System.out.print(letterCount(s.nextLine()));
     }
 }
