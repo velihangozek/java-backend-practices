@@ -77,7 +77,7 @@ ValidPasswordChecker
 
 ## 🧑‍💻 Author
 
-- **Velihan Gözek**
+- [Velihan Gözek](https://github.com/velihangozek)
 
 ---
 
