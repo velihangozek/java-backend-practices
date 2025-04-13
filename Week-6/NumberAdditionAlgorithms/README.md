@@ -60,7 +60,7 @@ Each string will contain at least one letter or symbol.
 
 ```bash
 git clone <repository-url>
-cd number-addition-algorithm
+cd NumberAdditionAlgorithms
 ```
 
 2. **Compile & Run:**
