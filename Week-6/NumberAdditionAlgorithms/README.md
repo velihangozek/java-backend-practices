@@ -65,18 +65,28 @@ cd number-addition-algorithm
 
 2. **Compile & Run:**
 
-- **Simple/Manual Parsing Approach:**
+- **FirstApproach:**
 
 ```bash
-javac src/org/velihangozek/Main.java
-java -cp src org.velihangozek.Main
+cd NumberAdditionAlgorithms/FirstApproach
+javac -d out src/main/java/org/velihangozek/Main.java
+java -cp out org.velihangozek.Main
 ```
 
-- **Regex Approach:**
+- **ManualParsingApproach:**
 
 ```bash
-javac src/org/velihangozek/Main.java
-java -cp src org.velihangozek.Main
+cd NumberAdditionAlgorithms/ManualParsingApproach
+javac -d out src/main/java/org/velihangozek/Main.java
+java -cp out org.velihangozek.Main
+```
+
+- **RegexApproach:**
+
+```bash
+cd NumberAdditionAlgorithms/RegexApproach
+javac -d out src/main/java/org/velihangozek/Main.java
+java -cp out org.velihangozek.Main
 ```
 
 When running, type your string input into the console, then press **Enter**.
@@ -86,11 +96,17 @@ When running, type your string input into the console, then press **Enter**.
 ## Project Structure
 
 ```
-.
-├── src
-│   └── org
-│       └── velihangozek
+├── NumberAdditionAlgorithms
+│   ├── FirstApproach
+│   │   └── src/main/java/org/velihangozek
+│   │       └── Main.java
+│   ├── ManualParsingApproach
+│   │   └── src/main/java/org/velihangozek
+│   │       └── Main.java
+│   └── RegexApproach
+│       └── src/main/java/org/velihangozek
 │           └── Main.java
+│
 └── README.md
 ```
 
