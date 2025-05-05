@@ -3,6 +3,8 @@ package org.velihangozek.model;
 import org.velihangozek.model.enums.Gender;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class User {
     private String name;
@@ -12,6 +14,7 @@ public class User {
     private LocalDate birthDate;
     private LocalDate createdDate;
     private boolean isActive;
+    private List<Order> orderList = new ArrayList<>();
 
     public User(String name, String email, String password) {
         this.name = name;
@@ -47,5 +50,22 @@ public class User {
 
     public boolean isActive() {
         return isActive;
+    }
+
+    public List<Order> getOrderList() {
+        return orderList;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                ", birthDate=" + birthDate +
+                ", createdDate=" + createdDate +
+                ", isActive=" + isActive +
+                ", orderList=" + orderList +
+                '}';
     }
 }
