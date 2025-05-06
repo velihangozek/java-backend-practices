@@ -10,16 +10,16 @@ public class AuthorService {
 
     private static Map<String, Author> authors = new HashMap();
 
-    public void create(String firstName, String lastName, Gender gender) {
+    public Author create(String firstName, String lastName, Gender gender) {
 
         Author author = new Author(firstName, lastName, gender);
         authors.put(author.getFirstName(), author);
+        return author;
 
     }
 
     public Author findAuthor(String name) {
         return authors.get(name);
     }
-
 
 }

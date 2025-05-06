@@ -58,7 +58,7 @@ public class Order {
         return "Order{" +
                 "productList=" + productList +
                 ", orderStatus=" + orderStatus +
-                ", user=" + user +
+                // ", user=" + user +
                 ", createdDateTime=" + createdDateTime +
                 ", canceledDateTime=" + canceledDateTime +
                 ", total=" + getTotal() +

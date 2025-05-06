@@ -12,8 +12,12 @@ public class UserService {
     public void create(String name, String email, String password) {
 
         User user = new User(name, email, password);
-
-        userList.add(user);
+        boolean isCreated = userList.add(user);
+        if (isCreated) {
+            System.out.println("User created successfully!: " + email);
+        } else {
+            System.out.println("Could not create user — a user with the email may already exist: " + email);
+        }
 
     }
 
@@ -29,6 +33,19 @@ public class UserService {
         for (User user : userList) {
             if (user.getName().equals(userName)) {
                 foundUser = user;
+                break;
+            }
+        }
+        return foundUser;
+    }
+
+    public User findUserByEmail(String userEmail) {
+        User foundUser = null;
+        for (User user : userList) {
+
+            if (user.getEmail().equals(userEmail)) {
+                foundUser = user;
+                System.out.println("User found with the entered email: " + foundUser);
                 break;
             }
         }
