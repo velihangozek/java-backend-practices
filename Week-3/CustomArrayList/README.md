@@ -2,7 +2,7 @@
 
 > A custom, generic, dynamically resizing array-backed list implementation in Java.
 
-![Java](https://img.shields.io/badge/Java-21-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Java](https://img.shields.io/badge/Java-21-purple.svg)
 
 ---
 
