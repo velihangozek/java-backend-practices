@@ -77,7 +77,7 @@ java-backend-practices/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/velihangozekk/java-backend-practices.git
+git clone https://github.com/velihangozek/java-backend-practices.git
 cd java-backend-practices/Week-3/CustomArrayList
 ```
 
