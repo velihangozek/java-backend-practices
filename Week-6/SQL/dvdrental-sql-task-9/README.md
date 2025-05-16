@@ -1,4 +1,4 @@
-**dvdrental-sQL-Task-9**
+**dvdrental-sql-task-9**
 
 # dvdrental-sql-task-9
 
