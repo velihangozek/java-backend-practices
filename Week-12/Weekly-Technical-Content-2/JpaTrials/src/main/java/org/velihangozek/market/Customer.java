@@ -69,6 +69,17 @@ public class Customer {
         this.gender = gender;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", mail='" + mail + '\'' +
+                ", onDate=" + onDate +
+                ", gender=" + gender +
+                '}';
+    }
+
     public enum Gender {
         MALE,
         FEMALE
