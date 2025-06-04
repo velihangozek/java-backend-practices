@@ -5,7 +5,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
-import java.time.LocalDate;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) {
@@ -67,17 +67,29 @@ public class App {
         //System.out.println(customer);
 
         transaction.begin();
+
+//        // Supplier Insert
+//        Supplier supplier = new Supplier();
+//        supplier.setAddress("Adres");
+//        supplier.setCompany("Velo");
+//        supplier.setContact("05432101234");
+//        supplier.setMail("velihangozek@hotmail.com");
+//        supplier.setPerson("velihan");
+//        entityManager.persist(supplier);
 //
+//        // Code Insert
 //        Code code = new Code();
 //        code.setGroup("11123");
 //        code.setSerial("44456");
 //        entityManager.persist(code);
 //
+//        // Product Insert
 //        Product product = new Product();
 //        product.setName("Iphone 15 Pro");
 //        product.setPrice(1234);
 //        product.setStock(100);
 //        product.setCode(code);
+//        product.setSupplier(supplier);
 //        entityManager.persist(product);
 //
 //        System.out.println(product);
@@ -86,8 +98,70 @@ public class App {
 //        Product product = entityManager.find(Product.class, 1);
 //        System.out.println(product);
 
-        Code code = entityManager.find(Code.class, 1);
-        System.out.println(code.getProduct().getName());
+//        Code code = entityManager.find(Code.class, 1);
+//        System.out.println(code.getProduct().getName());
+
+//        Product product = entityManager.find(Product.class, 1);
+//        System.out.println(product);
+
+//        Supplier supplier = entityManager.find(Supplier.class, 1);
+//
+//        Code code = new Code();
+//        code.setGroup("11123");
+//        code.setSerial("44456");
+//        entityManager.persist(code);
+//
+//        Product product = new Product();
+//        product.setName("Samsung Galaxy");
+//        product.setPrice(1234);
+//        product.setStock(100);
+//        product.setCode(code);
+//        product.setSupplier(supplier);
+//        entityManager.persist(product);
+
+//        Supplier supplier = entityManager.find(Supplier.class, 1);
+//        // System.out.println(supplier.getProductList());
+//
+//        // Enhanced for approach
+//        for (Product product : supplier.getProductList()) {
+//            System.out.println(product);
+//        }
+
+        // For Category Entity ->
+
+        // Supplier Insert
+        Supplier supplier = new Supplier();
+        supplier.setAddress("Address");
+        supplier.setCompany("Velo");
+        supplier.setContact("05432101234");
+        supplier.setMail("velihangozek@hotmail.com");
+        supplier.setPerson("velihan");
+        entityManager.persist(supplier);
+
+        // Category Insert
+        Category category = new Category();
+        category.setName("Phones");
+        List<Product> productList = supplier.getProductList();
+        //category.setProductList();
+        entityManager.persist(category);
+
+        // Code Insert
+        Code code = new Code();
+        code.setGroup("11123");
+        code.setSerial("44456");
+        entityManager.persist(code);
+
+        // Product Insert
+        Product product = new Product();
+        product.setName("Iphone 15 Pro");
+        product.setPrice(1234);
+        product.setStock(100);
+        product.setCode(code);
+        product.setSupplier(supplier);
+        product.setCategory(category);
+        entityManager.persist(product);
+
+        System.out.println(product);
 
         transaction.commit();
     }
