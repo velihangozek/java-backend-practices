@@ -5,6 +5,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class App {
@@ -130,38 +131,61 @@ public class App {
         // For Category Entity ->
 
         // Supplier Insert
-        Supplier supplier = new Supplier();
-        supplier.setAddress("Address");
-        supplier.setCompany("Velo");
-        supplier.setContact("05432101234");
-        supplier.setMail("velihangozek@hotmail.com");
-        supplier.setPerson("velihan");
-        entityManager.persist(supplier);
+//        Supplier supplier = new Supplier();
+//        supplier.setAddress("Address");
+//        supplier.setCompany("Velo");
+//        supplier.setContact("05432101234");
+//        supplier.setMail("velihangozek@hotmail.com");
+//        supplier.setPerson("velihan");
+//        entityManager.persist(supplier);
+//
+//        // Category Insert
+//        Category category = new Category();
+//        category.setName("Phones");
+//        List<Product> productList = supplier.getProductList();
+//        //category.setProductList();
+//        entityManager.persist(category);
+//
+//        // Code Insert
+//        Code code = new Code();
+//        code.setGroup("11123");
+//        code.setSerial("44456");
+//        entityManager.persist(code);
+//
+//        // Product Insert
+//        Product product = new Product();
+//        product.setName("Iphone 15 Pro");
+//        product.setPrice(1234);
+//        product.setStock(100);
+//        product.setCode(code);
+//        product.setSupplier(supplier);
+//        product.setCategory(category);
+//        entityManager.persist(product);
+//
+//        System.out.println(product);
 
-        // Category Insert
-        Category category = new Category();
-        category.setName("Phones");
-        List<Product> productList = supplier.getProductList();
-        //category.setProductList();
-        entityManager.persist(category);
+//        Color red = new Color("red");
+//        Color green = new Color("green");
+//        Color blue = new Color("blue");
+//        entityManager.persist(red);
+//        entityManager.persist(green);
+//        entityManager.persist(blue);
+//
+//        Product product = entityManager.find(Product.class, 1);
+//        List<Color> colorList = new ArrayList<>();
+//        // List<Color> colorList = product.getColorList();
+//        colorList.add(red);
+//        colorList.add(green);
+//        colorList.add(blue);
+//        product.setColorList(colorList);
+//        // product.setColorList(List.of(red, green, blue));
+//        entityManager.persist(product);
 
-        // Code Insert
-        Code code = new Code();
-        code.setGroup("11123");
-        code.setSerial("44456");
-        entityManager.persist(code);
+        Product product = entityManager.find(Product.class, 1);
+        System.out.println(product.getColorList());
 
-        // Product Insert
-        Product product = new Product();
-        product.setName("Iphone 15 Pro");
-        product.setPrice(1234);
-        product.setStock(100);
-        product.setCode(code);
-        product.setSupplier(supplier);
-        product.setCategory(category);
-        entityManager.persist(product);
-
-        System.out.println(product);
+        Color color = entityManager.find(Color.class, 1);
+        System.out.println(color.getProductList());
 
         transaction.commit();
     }

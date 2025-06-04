@@ -2,6 +2,8 @@ package org.velihangozek.market;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "products")
 public class Product {
@@ -31,6 +33,14 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "product_category_id", referencedColumnName = "category_id")
     private Category category;
+
+    @ManyToMany
+    @JoinTable(
+            name = "pro2colors",
+            joinColumns = {@JoinColumn(name = "pro2color_product_id")},
+            inverseJoinColumns = {@JoinColumn(name = "pro2color_color_id")}
+    )
+    private List<Color> colorList;
 
     public Product() {
     }
@@ -91,6 +101,14 @@ public class Product {
         this.category = category;
     }
 
+    public List<Color> getColorList() {
+        return colorList;
+    }
+
+    public void setColorList(List<Color> colorList) {
+        this.colorList = colorList;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -101,6 +119,7 @@ public class Product {
                 ", code=" + code +
                 ", supplier=" + supplier +
                 ", category=" + category +
+                ", colorList=" + colorList +
                 '}';
     }
 }
