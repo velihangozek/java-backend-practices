@@ -16,7 +16,7 @@ public class Color {
     @Column(name = "color_name", nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy = "colorList")
+    @ManyToMany(mappedBy = "colorList", cascade = CascadeType.REMOVE)
     private List<Product> productList;
 
     public Color() {

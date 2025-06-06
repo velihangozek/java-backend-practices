@@ -17,7 +17,7 @@ public class Code {
     @Column(name = "code_serial", nullable = false)
     private String serial;
 
-    @OneToOne(mappedBy = "code", fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "code", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Product product;
 
     public Code() {
