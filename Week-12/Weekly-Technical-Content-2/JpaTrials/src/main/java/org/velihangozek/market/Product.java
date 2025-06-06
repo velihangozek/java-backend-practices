@@ -22,19 +22,19 @@ public class Product {
     @Column(name = "product_stock")
     private int stock;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_code_id", referencedColumnName = "code_id")
     private Code code;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_supplier_id", referencedColumnName = "supplier_id")
     private Supplier supplier;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_category_id", referencedColumnName = "category_id")
     private Category category;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "pro2colors",
             joinColumns = {@JoinColumn(name = "pro2color_product_id")},

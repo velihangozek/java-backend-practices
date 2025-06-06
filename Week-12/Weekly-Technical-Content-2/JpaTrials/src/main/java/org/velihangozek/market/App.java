@@ -10,11 +10,11 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-        // Method-1
-        EntityTransaction transaction = entityManager.getTransaction();
+//        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
+//        EntityManager entityManager = entityManagerFactory.createEntityManager();
+//
+//        // Method-1
+//        EntityTransaction transaction = entityManager.getTransaction();
 
 //        transaction.begin();
 //
@@ -67,7 +67,7 @@ public class App {
         // Customer customer = entityManager.find(Customer.class, 2); // No customer with id = 2 in DB, so the output will be null, no exception.
         //System.out.println(customer);
 
-        transaction.begin();
+//        transaction.begin();
 
 //        // Supplier Insert
 //        Supplier supplier = new Supplier();
@@ -181,11 +181,35 @@ public class App {
 //        // product.setColorList(List.of(red, green, blue));
 //        entityManager.persist(product);
 
-        Product product = entityManager.find(Product.class, 1);
-        System.out.println(product.getColorList());
+//        Product product = entityManager.find(Product.class, 1);
+//        System.out.println(product.getColorList());
+//
+//        Color color = entityManager.find(Color.class, 1);
+//        System.out.println(color.getProductList());
 
-        Color color = entityManager.find(Color.class, 1);
-        System.out.println(color.getProductList());
+//        transaction.commit();
+
+//        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
+//        EntityManager entityManager = entityManagerFactory.createEntityManager();
+//        EntityTransaction transaction = entityManager.getTransaction();
+//
+//        transaction.begin();
+//
+//        Product product = entityManager.find(Product.class, 1);
+//        System.out.println(product.getName());
+//
+//        transaction.commit();
+
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityTransaction transaction = entityManager.getTransaction();
+
+        transaction.begin();
+
+        Product product = entityManager.find(Product.class, 1);
+        //System.out.println(product.getCategory().getName());
+        //System.out.println(product.getSupplier().getCompany());
+        System.out.println(product.getCode().getSerial());
 
         transaction.commit();
     }
