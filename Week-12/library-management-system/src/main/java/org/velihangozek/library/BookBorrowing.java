@@ -25,7 +25,7 @@ public class BookBorrowing {
     private LocalDate returnDate = null;
 
     @ManyToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "book_borrowing_book_id", referencedColumnName = "bookBorrowingList")
+    @JoinColumn(name = "book_borrowing_book_id", referencedColumnName = "book_id")
     private Book book;
 
     public BookBorrowing() {
