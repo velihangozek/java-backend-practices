@@ -115,8 +115,6 @@ This will initialize the schema and exit (no CLI beyond schema generation). Chec
 
 ## Database Schema
 
-Below are placeholders for screenshots of each table. Save your images in a `screenshots/` folder and update the paths.
-
 ### Authors Table
 
 ![Authors Table](./screenshots/authors_table.png)
