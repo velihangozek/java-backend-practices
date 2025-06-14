@@ -1,9 +1,6 @@
 package org.velihangozek.market;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -250,18 +247,38 @@ public class App {
 //
 //        transaction.commit();
 
+//        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
+//        EntityManager entityManager = entityManagerFactory.createEntityManager();
+//        EntityTransaction transaction = entityManager.getTransaction();
+//
+//        transaction.begin();
+//
+//        Product product = entityManager.find(Product.class, 1);
+//        entityManager.remove(product);
+//
+//        // System.out.println(product.getCode());
+//
+//        transaction.commit();
+
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
 
+        // JPQL (JAVA PERSISTENCE QUERY LANGUAGE)
         transaction.begin();
 
-        Product product = entityManager.find(Product.class, 1);
-        entityManager.remove(product);
+        // SELECT * FROM categories
+        // Query getAllCategories = entityManager.createQuery("SELECT category FROM Category category", Category.class);
 
-        // System.out.println(product.getCode());
+        TypedQuery<Category> getAllCategories = entityManager.createQuery("SELECT category FROM Category category", Category.class);
+        List<Category> categoryList = getAllCategories.getResultList();
+
+        for (Category category : categoryList) {
+            System.out.println(category.getName());
+        }
 
         transaction.commit();
+
 
     }
 }
