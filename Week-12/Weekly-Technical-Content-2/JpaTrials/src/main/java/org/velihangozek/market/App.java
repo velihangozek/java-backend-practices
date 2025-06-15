@@ -2,8 +2,10 @@ package org.velihangozek.market;
 
 import jakarta.persistence.*;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class App {
     public static void main(String[] args) {
@@ -269,16 +271,85 @@ public class App {
 
         // SELECT * FROM categories
         // Query getAllCategories = entityManager.createQuery("SELECT category FROM Category category", Category.class);
+//        TypedQuery<Category> getAllCategories = entityManager.createQuery("SELECT category FROM Category category", Category.class);
 
-        TypedQuery<Category> getAllCategories = entityManager.createQuery("SELECT category FROM Category category", Category.class);
-        List<Category> categoryList = getAllCategories.getResultList();
+        // SELECT * FROM Categories WHERE category_id = 1;
+//        TypedQuery<Category> getCategory = entityManager.createQuery("SELECT cat FROM Category cat WHERE cat.id = 1", Category.class);
 
-        for (Category category : categoryList) {
-            System.out.println(category.getName());
-        }
+        // SELECT * FROM Categories WHERE category_id = 1;
+//        TypedQuery<Category> getCategory = entityManager.createQuery("SELECT cat FROM Category cat WHERE cat.id = ?1", Category.class);
+//        getCategory.setParameter(1, 1);
+
+//        TypedQuery<Category> getCategory = entityManager.createQuery("SELECT cat FROM Category cat WHERE cat.id = :id", Category.class);
+//        getCategory.setParameter("id", 1);
+//
+//        List<Category> categoryList = getCategory.getResultList();
+//
+//
+//        for (Category category : categoryList) {
+//            System.out.println(category.getName());
+//        }
+
+//        TypedQuery<Category> getCategory = entityManager.createQuery("SELECT cat FROM Category cat WHERE cat.id = :id", Category.class);
+//        getCategory.setParameter("id", 1);
+
+//        TypedQuery<Category> getCategory = entityManager.createQuery("SELECT cat FROM Category cat WHERE cat.id = :id", Category.class);
+//        getCategory.setParameter("id", 123);
+//        Category category = getCategory.getSingleResult();
+//        System.out.println(category.getName());
+
+//        TypedQuery<Product> productQuery = entityManager.createQuery("SELECT p FROM Product p WHERE p.price < 10", Product.class);
+//        List<Product> productList = productQuery.getResultList();
+//        System.out.println(productList);
+
+//        TypedQuery<Product> productQuery = entityManager.createQuery("SELECT p.name FROM Product p WHERE p.price < 10", Product.class);
+//        List<Product> productList = productQuery.getResultList();
+//
+//        for (Product product : productList) {
+//            System.out.println(product.getName());
+//        }
+
+//        TypedQuery<String> productQuery = entityManager.createQuery("SELECT p.name FROM Product p WHERE p.price < 10", String.class);
+//        List<String> productNameList = productQuery.getResultList();
+//
+//        for (String productName : productNameList) {
+//            System.out.println(productName);
+//        }
+
+//        TypedQuery<Product> productQuery = entityManager.createQuery("SELECT p.id, p.name, p.price FROM Product p WHERE p.price < 10", Product.class);
+//        List<Product> productInfoList = productQuery.getResultList();
+//
+//        for (Product productInfo : productInfoList) {
+//            System.out.println("ID = " + productInfo);
+//        }
+//
+//        TypedQuery<Product[]> productQuery = entityManager.createQuery("SELECT p.id, p.name, p.price FROM Product p WHERE p.price < 10", Product[].class);
+//        List<Product[]> productInfoList = productQuery.getResultList();
+//
+//        for (Product[] productInfo : productInfoList) {
+//            System.out.println("ID = " + productInfo[0]);
+//        }
+
+//        TypedQuery<Object[]> productQuery = entityManager.createQuery("SELECT p.id, p.name, p.price FROM Product p WHERE p.price < 10", Object[].class);
+//        List<Object[]> productInfoList = productQuery.getResultList();
+//
+//        for (Object[] productInfo : productInfoList) {
+//            System.out.println("ID = " + productInfo[0] + " - Name = " + productInfo[1] + " - Price = " + productInfo[2]);
+//        }
+
+//        TypedQuery<CheapProduct> productQuery = entityManager.createQuery("SELECT NEW CheapProduct(p.id, p.name, p.price) FROM Product p WHERE p.price < 10", CheapProduct.class);
+//        List<CheapProduct> cheapProductList = productQuery.getResultList();
+//
+//        for (CheapProduct cheapProduct : cheapProductList) {
+//            System.out.println(cheapProduct);
+//        }
+
+        // SELECT COUNT(*) AS cat_count FROM categories
+        TypedQuery<Long> customQuery = entityManager.createQuery("SELECT COUNT(p.id) FROM Product p", Long.class);
+        Long productCount = customQuery.getSingleResult();
+        System.out.println(productCount);
 
         transaction.commit();
-
 
     }
 }
