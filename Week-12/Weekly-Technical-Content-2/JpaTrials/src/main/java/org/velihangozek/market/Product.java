@@ -6,6 +6,10 @@ import java.util.List;
 
 @Entity
 @Table(name = "products")
+@NamedQueries({
+        @NamedQuery(name = "Product.findAll", query = "SELECT p FROM Product p"),
+        @NamedQuery(name = "Product.cheap", query = "SELECT p FROM Product p WHERE p.price < :price")
+})
 public class Product {
 
     @Id
