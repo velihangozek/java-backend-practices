@@ -15,4 +15,16 @@ public class Player {
     public int getScore() {
         return score;
     }
+
+    public void addScore(int points) {
+        this.score += points;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "nickName='" + nickName + '\'' +
+                ", score=" + score +
+                '}';
+    }
 }
