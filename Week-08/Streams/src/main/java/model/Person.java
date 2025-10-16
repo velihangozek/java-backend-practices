@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Person implements Serializable {
 
-     @Serial
-     private static final long serialVersionUID = 1L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String name;
 
@@ -17,7 +17,15 @@ public class Person implements Serializable {
 
     private List<String> phoneNumbers;
 
+    private String email;
+
     private transient String password; // transient => ignore serialization for sensitive data.
+
+    public Person(String email, int age, String name) {
+        this.email = email;
+        this.age = age;
+        this.name = name;
+    }
 
     public Person(String name, int age, Address address, List<String> phoneNumbers, String password) {
         this.name = name;
@@ -32,9 +40,7 @@ public class Person implements Serializable {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", address=" + address +
-                ", phoneNumbers=" + phoneNumbers +
-                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

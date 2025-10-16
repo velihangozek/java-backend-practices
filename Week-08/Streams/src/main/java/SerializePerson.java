@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.List;
 
-public class ObjectOutputStreamMain {
+public class SerializePerson {
 
     public static void main(String[] args) {
 
@@ -20,13 +20,9 @@ public class ObjectOutputStreamMain {
             System.out.println("person object successfully serialized/written");
 
         } catch (FileNotFoundException e) {
-
             throw new RuntimeException(e);
-
         } catch (IOException e) {
-
             throw new RuntimeException(e);
-
         }
 
     }
